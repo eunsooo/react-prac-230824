@@ -1,0 +1,119 @@
+#port {
+    width: 100%;
+    margin-top: 30vh;
+}
+
+.port__inner {
+    padding: 16px;
+
+    .port__title {
+        margin-bottom: 16px;
+        width: 100%;
+        height: 5vw;
+        text-indent: -0.26vw;
+        font-size: 4vw;
+        font-weight: 900;
+        line-height: 1.6;
+        font-family: var(--mainKor-font);
+        text-transform: uppercase;
+        color: var(--black100);
+        border-bottom: 0.4vw solid var(--black100);
+
+        em {
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 2;
+        }
+    }
+    .port__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 7000px;
+
+        .port__item {
+            margin-right: 20px;
+            padding: 2.5rem;
+            width: 500px;
+            height: 70vh;
+            background: var(--subBg100);
+
+            &.p1 {
+                background-color: var(--subBg100);
+            }
+            &.p2 {
+                background-color: var(--subBg200);
+            }
+            &.p3 {
+                background-color: var(--subBg300);
+            }
+            &.p4 {
+                background-color: var(--subBg400);
+            }
+            &.p5 {
+                background-color: var(--subBg500);
+            }
+            &.p6 {
+                background-color: var(--subBg100);
+            }
+            &.p7 {
+                background-color: var(--subBg200);
+            }
+            &.p8 {
+                background-color: var(--subBg300);
+            }
+            &.p9 {
+                background-color: var(--subBg400);
+            }
+            &.p10 {
+                background-color: var(--subBg500);
+            }
+            .num {
+                font-size: 2rem;
+                font-family: var(--mainNum-font);
+            }
+            .img {
+                display: block;
+                margin-top: -20px;
+                transition: margin-top 300ms;
+
+                img {
+                    border-radius: 5px;
+                    filter: saturate(0%);
+                    transition: all 300ms;
+                }
+                
+                &:hover {
+                    margin-top: 0;
+
+                    img {
+                        filter: saturate(100%);
+                    }
+                }
+            }
+            .title {
+                margin-bottom: 1rem;
+                padding: 0.8rem 0;
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: var(--black100);
+                border-bottom: 2px solid var(--black100);
+            }
+            .desc {
+                font-size: 1rem;
+            }
+            .site {
+                display: block;
+                padding: 0.625rem 1.5rem;
+                text-align: center;
+                border: 1px solid var(--black100);
+                transition: all 200ms;
+
+                &:hover {
+                    color: var(--white);
+                    background-color: var(--black100);
+                }
+            }
+        }
+    }
+}
